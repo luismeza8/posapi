@@ -1,0 +1,24 @@
+CRITICAL - 2024-01-18 17:23:04 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH/spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-01-18 17:23:04 --> ErrorException: Uncaught Error: Class "Locale" not found in /opt/lampp/htdocs/POSAPI/system/I18n/TimeTrait.php:74
+Stack trace:
+#0 /opt/lampp/htdocs/POSAPI/system/I18n/TimeTrait.php(115): CodeIgniter\I18n\Time->__construct()
+#1 /opt/lampp/htdocs/POSAPI/system/HTTP/ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 /opt/lampp/htdocs/POSAPI/system/HTTP/ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 /opt/lampp/htdocs/POSAPI/system/Debug/ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 /opt/lampp/htdocs/POSAPI/system/Debug/Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /opt/lampp/htdocs/POSAPI/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /opt/lampp/htdocs/POSAPI/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /opt/lampp/htdocs/POSAPI/spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/I18n/TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
