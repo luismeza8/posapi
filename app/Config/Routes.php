@@ -20,3 +20,6 @@ $routes->get("/producto/create", "Producto::create"); // formulario del producto
 $routes->post("/producto/store", "Producto::store"); // se crea el producto
 //$routes->post("/producto/store", "Producto::store"); // se crea el producto
 
+$routes->get("/producto/(:num)/edit","Producto::edit/$1");
+
+$routes->get("/dashboard", "Home::dashboard");

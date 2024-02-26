@@ -78,5 +78,16 @@ class Producto extends BaseController {
         $productoModel->delete($id);
 
         return redirect()->to("/producto");
-}
+    }
+
+    public function edit($id) {
+        $productoModel = new ProductoModel();
+        $producto = $productoModel->find($id);
+
+        $data = array(
+            "producto" => $producto
+        );    
+        
+        return view("/productos/edit", $data);
+    }
 } 
