@@ -1,13 +1,16 @@
+<?php  include_once("../app/Views/plantillas/comun.php");  ?>
 
 <?php
-    $titulo = "Dashboard";
+$titulo ="Productos";
+
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<title>POS API - <?= $titulo; ?></title>
-    <?php include_once("../app/Views/plantillas/head.php");?>
+  <title>POS API - <?= $titulo; ?> </title>
+  <?php  include_once("../app/Views/plantillas/head.php");  ?>
+  
 </head>
 <!--
 `body` tag options:
@@ -21,11 +24,12 @@
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
   <!-- Navbar -->
-    <?php include_once("../app/Views/plantillas/header.php");?>
+  <?php  include_once("../app/Views/plantillas/header.php");  ?>
   <!-- /.navbar -->
 
-  <!-- Main Sidebar Container -->
-    <?php include_once("../app/Views/plantillas/aside.php");?>
+  <!-- Main Sidebar Container --> 
+  <?php  include_once("../app/Views/plantillas/aside.php");  ?>
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -33,12 +37,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-          <h1 class="m-0"><?= $titulo?></h1>
+            <h1 class="m-0"> <?= $titulo; ?></h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active"><?= $titulo?></li>
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active"><?= $titulo; ?></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -50,30 +54,11 @@
     <div class="content">
       <div class="container-fluid">
         <div class="row">
-    <style>
-        html, body {
-            margin:0;
-            padding:0;
-            background: #777;
-        }
-        .producto{
-            width:300px;
-            border-radius:5px;
-            background:#fff;
-            paddig:10px;
-            margin:5px;
-            font-family:"arial";
-            float: left;
-            height: 550px;
-        }
-        .producto img{ width:100% }
-        .producto h1{ font-size:20px; color: #55a; }
+          <!--CONTENIDO DE ESTA PÁGINA -->
 
-</style>
+       <!-- /.card -->
 
-            <!-- /.card -->
-
-            <div class="card">
+       <div class="col-12 card">
               <div class="card-header">
                 <h3 class="card-title">Striped Full Width Table</h3>
               </div>
@@ -82,43 +67,41 @@
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th style="width: 10px">#</th>
-                      <th>Task</th>
-                      <th>Progress</th>
-                      <th style="width: 40px">Label</th>
+                      <th style="width: 10px">ID</th>
+                      <th>Nombre</th>
+                      <th>Imagen</th>
+                      <th style="width: 40px">Precio</th>
+                      <th>Acciones</th>
                     </tr>
                   </thead>
                   <tbody>
-    <?php foreach ($productos as $i => $producto) { ?>
+                    
+                  <?php foreach ($productos as $i => $producto) {  ?>    
                     <tr>
-                      <td>1.</td>
-                      <td>Update software</td>
+                      <td><?= $producto["id"]; ?> </td>
+                      <td><?= $producto["nombre"]; ?> </td>
                       <td>
-                        <div class="progress progress-xs">
-                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                        </div>
+                        <img style="width:50px;" src="<?= $producto['imagen']; ?>" />
                       </td>
-                      <td><span class="badge bg-danger">55%</span></td>
+                        <td>$<?= $producto['precio']; ?></td>
+                      <td>
+                        <button class="btn-sm btn-dark"><i class="fa fa-solid fa-pen"></i> Editar</button>
+                        <button class="btn-sm btn-danger"><i class="fa fa-solid fa-trash"></i> Eliminar</button>
                     </tr>
+                 <?php }  ?>
+                    
+
+
                   </tbody>
                 </table>
               </div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
-    
+ 
+          
 
-    
-    <section class="producto">
-        <img src= "<?= $producto["imagen"]; ?>" >
-        <h1> <?= $producto["nombre"]; ?> </h1>    
-        <p> "<?= $producto["descripcion"]; ?>" </p>
-        <p> "<?= $producto["precio"]; ?>" </p>
-        <a href=""> Agregar al carrito </a>
-    </section>
-    
-    <?php }?>
-
+          <!--FIN CONTENIDO DE ESTA PÁGINA -->
         </div>
         <!-- /.row -->
       </div>
@@ -129,16 +112,15 @@
   <!-- /.content-wrapper -->
 
 
-  <!-- Main Footer -->
-  <?php include_once("../app/Views/plantillas/footer.php");?>
 
-  </div>
+  <!-- Main Footer -->
+  <?php  include_once("../app/Views/plantillas/footer.php");  ?>
+</div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
-  <?php include_once("../app/Views/plantillas/scripts.php");?>
+
+<?php  include_once("../app/Views/plantillas/scripts.php");  ?>
+
 </body>
 </html>
-
-
-
