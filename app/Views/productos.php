@@ -85,8 +85,8 @@ $titulo ="Productos";
                       </td>
                         <td>$<?= $producto['precio']; ?></td>
                       <td>
-                        <button class="btn-sm btn-dark"><i class="fa fa-solid fa-pen"></i> Editar</button>
-                        <button class="btn-sm btn-danger"><i class="fa fa-solid fa-trash"></i> Eliminar</button>
+                        <a href="/producto/<?= $producto["id"]; ?>/edit" class="btn-sm btn-dark"><i class="fa fa-solid fa-pen"></i> Editar</a>
+                        <button onClick="eliminar(<?= $producto['id']; ?>);" class="btn-sm btn-danger"><i class="fa fa-solid fa-trash"></i> Eliminar</button>
                     </tr>
                  <?php }  ?>
                     
@@ -121,6 +121,26 @@ $titulo ="Productos";
 <!-- REQUIRED SCRIPTS -->
 
 <?php  include_once("../app/Views/plantillas/scripts.php");  ?>
+
+<script>
+    
+    function eliminar(id) {
+        Swal.fire({
+  title: "Estas seguro?",
+  text: "El producto se eliminara para siempre!",
+  icon: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#3085d6",
+  cancelButtonColor: "#d33",
+  confirmButtonText: "Si, estoy seguro!"
+}).then((result) => {
+  if (result.isConfirmed) {
+    location.href = "/producto/" + id + "/delete";
+  }
+});
+    }
+
+</script>
 
 </body>
 </html>
