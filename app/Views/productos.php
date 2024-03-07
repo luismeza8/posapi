@@ -2,7 +2,6 @@
 
 <?php
 $titulo ="Productos";
-
 ?>
 
 <!DOCTYPE html>
