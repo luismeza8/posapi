@@ -2,7 +2,7 @@
 <?php  include_once("../app/Views/plantillas/comun.php");  ?>
 
 <?php
-$titulo ="Productos";
+$titulo ="producto";
 ?>
 
 <!DOCTYPE html>
@@ -84,6 +84,11 @@ $titulo ="Productos";
                     <input name="precio" value="<?= $producto["precio"]; ?>" type="text" class="form-control">
                   </div>
 
+                  <div class="form-group">
+                    <label>Imagen</label>
+                    <input name="imagen" value="<?= $producto["imagen"]; ?>" type="text" class="form-control">
+                  </div>
+
                 </div>
                 <!-- /.card-body -->
 
@@ -104,9 +109,9 @@ $titulo ="Productos";
   </div>
   <!-- /.content-wrapper -->
 
+</div>
   <!-- Main Footer -->
   <?php  include_once("../app/Views/plantillas/footer.php");  ?>
-</div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->

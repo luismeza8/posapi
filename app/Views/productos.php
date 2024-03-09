@@ -57,6 +57,14 @@ $titulo ="Productos";
 
        <!-- /.card -->
 
+        <div class="col-12">
+            <a href="/producto/create" class="btn btn-success">
+                Nuevo Producto
+            </a>
+            <br>
+            <br>
+        </div>
+
        <div class="col-12 card">
               <div class="card-header">
                 <h3 class="card-title">Striped Full Width Table</h3>
