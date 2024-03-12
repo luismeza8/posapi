@@ -24,3 +24,6 @@ $routes->get("/producto/(:num)/edit","Producto::edit/$1");
 $routes->get("/producto/(:num)/delete","Producto::delete/$1");
 
 $routes->get("/dashboard", "Home::dashboard");
+
+
+$routes->get('/categoria/', "Categoria::index");
