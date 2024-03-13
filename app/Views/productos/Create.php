@@ -109,8 +109,8 @@ $titulo ="crear producto";
   <!-- /.content-wrapper -->
 
   <!-- Main Footer -->
-  <?php  include_once("../app/Views/plantillas/footer.php");  ?>
 </div>
+<?php  include_once("../app/Views/plantillas/footer.php");  ?>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->

@@ -60,9 +60,6 @@ $titulo ="Crear Categoria";
           <div class="col-md-6">
             <!-- general form elements -->
             <div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">Editando producto</h3>
-              </div>
               <!-- /.card-header -->
               <!-- form start -->
                 <form action="/categoria/store/" method="POST">
@@ -104,8 +101,8 @@ $titulo ="Crear Categoria";
   <!-- /.content-wrapper -->
 
   <!-- Main Footer -->
-  <?php  include_once("../app/Views/plantillas/footer.php");  ?>
 </div>
+<?php  include_once("../app/Views/plantillas/footer.php");  ?>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->

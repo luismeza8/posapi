@@ -61,7 +61,7 @@ $titulo ="Categoria";
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Editando producto</h3>
+                <h3 class="card-title">Editando categoria</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->

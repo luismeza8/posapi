@@ -66,9 +66,6 @@ $titulo ="Categorias";
         </div>
 
        <div class="col-12 card">
-              <div class="card-header">
-                <h3 class="card-title">Striped Full Width Table</h3>
-              </div>
               <!-- /.card-header -->
               <div class="card-body p-0">
                 <table class="table table-striped">
