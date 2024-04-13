@@ -1,0 +1,82 @@
+CRITICAL - 2024-04-08 15:23:36 --> ParseError: syntax error, unexpected token "}"
+in APPPATH/Controllers/ProductoAPI.php on line 22.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(899): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/POSAPI/public/index.php')
+CRITICAL - 2024-04-08 15:42:30 --> ErrorException: Undefined variable $productoModel
+in APPPATH/Controllers/ProductoAPI.php on line 18.
+ 1 APPPATH/Controllers/ProductoAPI.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ProductoAPI->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/POSAPI/public/index.php')
+CRITICAL - 2024-04-08 15:42:38 --> ErrorException: Undefined variable $productoModel
+in APPPATH/Controllers/ProductoAPI.php on line 14.
+ 1 APPPATH/Controllers/ProductoAPI.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\ProductoAPI->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/POSAPI/public/index.php')
+CRITICAL - 2024-04-08 15:42:48 --> ErrorException: Undefined variable $productoModel
+in APPPATH/Controllers/ProductoAPI.php on line 14.
+ 1 APPPATH/Controllers/ProductoAPI.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\ProductoAPI->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/POSAPI/public/index.php')
+CRITICAL - 2024-04-08 15:42:49 --> ErrorException: Undefined variable $productoModel
+in APPPATH/Controllers/ProductoAPI.php on line 14.
+ 1 APPPATH/Controllers/ProductoAPI.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\ProductoAPI->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/POSAPI/public/index.php')
+CRITICAL - 2024-04-08 15:42:58 --> ErrorException: Undefined variable $productoModel
+in APPPATH/Controllers/ProductoAPI.php on line 18.
+ 1 APPPATH/Controllers/ProductoAPI.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ProductoAPI->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/POSAPI/public/index.php')
+CRITICAL - 2024-04-08 15:45:22 --> ErrorException: Undefined variable $lista
+in APPPATH/Controllers/ProductoAPI.php on line 41.
+ 1 APPPATH/Controllers/ProductoAPI.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ProductoAPI->show()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/POSAPI/public/index.php')
+CRITICAL - 2024-04-08 15:45:39 --> ErrorException: Undefined variable $lista
+in APPPATH/Controllers/ProductoAPI.php on line 41.
+ 1 APPPATH/Controllers/ProductoAPI.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ProductoAPI->show()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/POSAPI/public/index.php')
+CRITICAL - 2024-04-08 15:54:17 --> ErrorException: Undefined variable $respuesta
+in APPPATH/Controllers/ProductoAPI.php on line 58.
+ 1 APPPATH/Controllers/ProductoAPI.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ProductoAPI->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/POSAPI/public/index.php')
+CRITICAL - 2024-04-08 15:57:20 --> ErrorException: Undefined variable $respuesta
+in APPPATH/Controllers/ProductoAPI.php on line 58.
+ 1 APPPATH/Controllers/ProductoAPI.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ProductoAPI->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/POSAPI/public/index.php')

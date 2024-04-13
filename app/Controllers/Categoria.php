@@ -14,11 +14,11 @@ class Categoria extends BaseController {
             "categorias" => $categorias
         );
 
-        return view('categorias', $datos);
+        return view('categorias/categorias', $datos);
     }
 
     public function create() {
-        return view("productos/Create");
+        return view("categorias/categorias_create");
     }
 
     public function store() {
@@ -34,28 +34,45 @@ class Categoria extends BaseController {
         print_r($resultado);
         
         if($resultado) {
-            return redirect()->to("/producto");
+            return redirect()->to("/categoria");
         } else {
-            return redirect()->to("/create?error=Error al crear el producto");
+            return redirect()->to("/create?error=Error al crear la categoria");
         }
     }
 
     public function delete($id) {
-        $productoModel = new ProductoModel();
+        $categoriaModel = new CategoriaModel();
 
-        $productoModel->delete($id);
+        $categoriaModel->delete($id);
 
-        return redirect()->to("/producto");
+        return redirect()->to("/categoria");
     }
 
     public function edit($id) {
-        $productoModel = new ProductoModel();
-        $producto = $productoModel->find($id);
+        $categoriaModel = new CategoriaModel();
+        $categoria = $categoriaModel->find($id);
 
         $data = array(
-            "producto" => $producto
+            "categoria" => $categoria
         );    
         
-        return view("/productos/edit", $data);
+        return view("/categorias/categorias_edit", $data);
     }
+        public function update($id){
+            $categoriaModel = new CategoriaModel(); 
+
+            $datos = array( 
+                "nombre" => $this->request->getVar("nombre"),
+                "estado" =>$this->request->getVar("estado"),
+                "imagen" => $this->request->getVar("imagen"),
+            );
+
+            $resultado = $categoriaModel->update($id,$datos);
+
+            if($resultado){
+                return redirect()->to("/categoria");
+            }else{
+                return redirect()->to("/create?error=Error al crear la categoria");
+            }
+        }
 } 
